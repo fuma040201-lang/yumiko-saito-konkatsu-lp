@@ -49,8 +49,8 @@ button{font:inherit}
 .site-header nav a{text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.08em}
 .nav-cta{min-height:44px;padding:11px 22px;display:inline-flex;align-items:center;color:#fff;border-radius:4px;background:var(--red);box-shadow:0 8px 20px rgba(188,41,71,.16)}
 
-.hero{min-height:700px;display:grid;grid-template-columns:1fr 1fr;background:var(--paper)}
-.hero-photo{min-height:700px;position:relative;display:grid;place-items:end center;overflow:hidden;background:
+.hero{min-height:780px;display:grid;grid-template-columns:1fr 1fr;background:var(--paper)}
+.hero-photo{min-height:780px;position:relative;display:grid;place-items:end center;overflow:hidden;background:
   linear-gradient(180deg,rgba(120,174,187,.35),rgba(228,240,242,.5)),
   radial-gradient(circle at 24% 22%,#fff 0 16%,transparent 17%),
   #d9e9ec
@@ -71,9 +71,10 @@ button{font:inherit}
 }
 .audience{margin:0 0 22px;font-size:10px;font-weight:900;letter-spacing:.08em}
 .audience span{margin-right:10px;padding:7px 10px;color:#fff;background:var(--coral)}
-.hero h1{margin:0;display:grid;justify-items:start;gap:8px;font:800 clamp(40px,4.45vw,66px)/1.3 var(--sans);letter-spacing:.035em}
+.hero h1{margin:0;display:grid;justify-items:start;gap:7px;font:800 clamp(38px,3.55vw,52px)/1.28 var(--sans);letter-spacing:.025em}
 .hero h1 span,.hero h1 em{padding:2px 14px 7px;background:#fff;box-shadow:0 6px 16px rgba(36,31,32,.07);font-style:normal}
 .hero h1 em{color:var(--red)}
+.hero h1 .hero-knowledge{font-size:.84em;letter-spacing:.01em}
 .hero-lead{margin:25px 0 0;font-size:16px;font-weight:700;line-height:1.9}
 .hero-gift{margin:26px 0 20px;padding:14px 18px 15px;display:flex;align-items:center;gap:16px;border-left:5px solid var(--blue);background:#fff;box-shadow:0 8px 22px rgba(36,31,32,.07)}
 .gift-label{padding:6px 8px;color:#fff;background:var(--blue-dark);font-size:8px;font-weight:900;letter-spacing:.06em;white-space:nowrap}
@@ -244,7 +245,8 @@ footer p{margin:0}
   .hero-copy{padding:42px 20px 39px}
   .audience{margin-bottom:18px;font-size:8px;letter-spacing:.03em}
   .audience span{margin-right:6px;padding:6px 7px}
-  .hero h1{gap:5px;font-size:36px;line-height:1.28}
+  .hero h1{gap:5px;font-size:29px;line-height:1.3;letter-spacing:.02em}
+  .hero h1 .hero-knowledge{font-size:26px;letter-spacing:0}
   .hero h1 span,.hero h1 em{padding:1px 8px 4px}
   .hero-lead{margin-top:19px;font-size:13px}
   .hero-gift{width:100%;margin:20px 0 16px;padding:12px 12px;gap:11px}
@@ -322,7 +324,8 @@ footer p{margin:0}
 }
 
 @media(max-width:370px){
-  .hero h1{font-size:32px}
+  .hero h1{font-size:25px;letter-spacing:0}
+  .hero h1 .hero-knowledge{font-size:22px}
   .hero-copy{padding-right:16px;padding-left:16px}
   .line-mark{width:38px;height:38px}
   .primary-cta strong{font-size:12px}
