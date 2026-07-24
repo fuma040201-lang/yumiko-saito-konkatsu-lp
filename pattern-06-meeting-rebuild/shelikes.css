@@ -21,7 +21,7 @@ body{
   padding:9px 20px;
   display:grid;
   place-items:center;
-  background:linear-gradient(90deg,#55adc0 0%,#8e91b5 48%,#e57f85 100%);
+  background:linear-gradient(90deg,#2f7484 0%,#62577f 48%,#a83e51 100%);
   font-size:12px;
   letter-spacing:.08em;
 }
@@ -106,6 +106,7 @@ body{
 }
 .eyebrow span{
   padding:7px 10px;
+  color:#251b1c;
   border-radius:0;
   background:var(--she-coral);
 }
@@ -237,11 +238,11 @@ body{
 }
 .proof-strip strong{color:var(--she-red);font-size:27px}
 .proof-strip span{color:#4d555c}
-.claim-note{color:#7f8589}
+.claim-note,.profile-note,.preview-note{color:#5c646a}
 
 section:not(.hero){padding:90px 0}
 .kicker{
-  color:var(--she-coral);
+  color:#9c3540;
   letter-spacing:.18em;
 }
 .section-heading h2{
@@ -282,25 +283,27 @@ section:not(.hero){padding:90px 0}
 .pain-cards article:nth-child(3):before{background:#dfb97e}
 .pain-cards article>span{
   top:23px;
-  color:#8a9094;
+  color:#565e63;
 }
 .pain-icon{
   width:70px;
   height:70px;
   margin-bottom:20px;
+  color:#251b1c;
   border-radius:50%;
   background:var(--she-coral);
   box-shadow:none;
 }
 .pain-cards article:nth-child(2) .pain-icon{
-  color:#fff;
+  color:#112a33;
   background:var(--she-blue);
 }
 .pain-cards article:nth-child(3) .pain-icon{
-  color:#fff;
+  color:#493715;
   background:#d7a65f;
 }
 .truth-panel{
+  color:#112a33;
   border-radius:0;
   background:var(--she-blue);
   box-shadow:none;
@@ -309,8 +312,15 @@ section:not(.hero){padding:90px 0}
   border-radius:0;
   background:#fff;
 }
-.truth-panel h3{font-family:var(--sans)}
-.truth-panel mark{background:linear-gradient(transparent 55%,#f0a4a6 55%)}
+.truth-panel h3{
+  color:#112a33;
+  font-family:var(--sans);
+}
+.truth-panel p{color:#10252d}
+.truth-panel mark{
+  color:#112a33;
+  background:linear-gradient(transparent 55%,#f0a4a6 55%);
+}
 
 .method-section{
   background:#fff;
@@ -334,13 +344,17 @@ section:not(.hero){padding:90px 0}
   box-shadow:0 5px 15px rgba(21,25,29,.08);
 }
 .step-day{
+  color:#251b1c;
   border:5px solid #fff;
   background:var(--she-coral);
   box-shadow:0 0 0 1px #e6e6e6;
 }
-.timeline article:nth-child(2) .step-day{background:var(--she-blue)}
+.timeline article:nth-child(2) .step-day{
+  color:#112a33;
+  background:var(--she-blue);
+}
 .timeline article:nth-child(3) .step-day{
-  color:#fff;
+  color:#493715;
   background:#d7a65f;
 }
 .step-copy>span{color:var(--she-red)}
@@ -352,10 +366,10 @@ section:not(.hero){padding:90px 0}
 .formula-cta small{color:var(--she-red)}
 
 .difference-section{
-  color:#fff;
+  color:var(--she-black);
   background:var(--she-blue);
 }
-.difference-section .kicker{color:#ffd4d2}
+.difference-section .kicker{color:#10252d}
 .difference-section .section-heading h2{
   color:var(--she-black);
 }
@@ -364,20 +378,28 @@ section:not(.hero){padding:90px 0}
   border-radius:3px;
   background:#fff;
 }
-.compare-title{border-radius:0}
+.compare-title{
+  color:#fff;
+  border-radius:0;
+}
 .before .compare-title{background:#4f5b61}
 .after{border:0}
-.after .compare-title{background:var(--she-coral)}
+.after .compare-title{background:#a83e51}
+.compare-column li{color:var(--she-black)}
+.before li span{color:#5d525a}
 .compare-arrow{
   background:var(--she-red);
 }
-.after li span{background:var(--she-coral)}
+.after li span{
+  color:#251b1c;
+  background:var(--she-coral);
+}
 
 .takeaway-section{
   color:var(--she-black);
   background:var(--she-pink-bg);
 }
-.takeaway-copy .kicker{color:var(--she-coral)}
+.takeaway-copy .kicker{color:#9c3540}
 .takeaway-copy h2{
   font-family:var(--sans);
   font-size:clamp(32px,2.7vw,36px);
@@ -417,6 +439,7 @@ section:not(.hero){padding:90px 0}
 }
 .profile-name strong{font-family:var(--sans)}
 .profile-name small,.profile-points b{color:var(--she-red)}
+.profile-name span{color:#65555e}
 .profile-points div{
   border-radius:2px;
   background:var(--she-pink-bg);
@@ -425,7 +448,7 @@ section:not(.hero){padding:90px 0}
   border-left-color:var(--she-blue);
   background:#edf4f6;
 }
-.supervisor-note>span{color:var(--she-blue)}
+.supervisor-note>span{color:#35697a}
 
 .faq-section{background:#f7f8f8}
 .faq-list details{
