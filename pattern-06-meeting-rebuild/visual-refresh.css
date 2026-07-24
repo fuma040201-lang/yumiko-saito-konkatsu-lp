@@ -1,0 +1,159 @@
+.visual-section{
+  display:grid;
+  gap:34px;
+}
+
+.visual-heading{
+  margin-bottom:0;
+}
+
+.visual-heading>p:not(.kicker){
+  margin:14px 0 0;
+  color:#4f5960;
+  font-size:15px;
+  font-weight:700;
+}
+
+.visual-picture{
+  width:100%;
+  display:block;
+  overflow:hidden;
+  border-radius:8px;
+  background:#fff;
+  box-shadow:0 12px 32px rgba(21,25,29,.1);
+}
+
+.visual-picture-wide{
+  aspect-ratio:1200/620;
+}
+
+.visual-picture-compare{
+  aspect-ratio:1200/560;
+}
+
+.visual-picture img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+
+.problem-section,
+.takeaway-section{
+  background:#fbf5f5;
+}
+
+.method-section:before{
+  display:none;
+}
+
+.method-section .visual-heading h2{
+  padding-left:20px;
+  border-left:8px solid var(--she-coral);
+  font-size:clamp(36px,3.5vw,48px);
+}
+
+.formula-cta.visual-cta{
+  margin-top:0;
+  padding:24px 28px;
+  border-left:8px solid var(--she-coral);
+  background:#fbf5f5;
+}
+
+.formula-cta.visual-cta strong{
+  margin:0;
+  font-size:22px;
+}
+
+.difference-section{
+  background:#dcebef;
+}
+
+.difference-section .visual-heading>p:not(.kicker){
+  color:#2d4d58;
+}
+
+.visual-bottom-cta{
+  display:flex;
+  justify-content:center;
+}
+
+.visual-bottom-cta .btn{
+  min-width:320px;
+}
+
+.profile-copy h2{
+  line-height:1.45;
+}
+
+.profile-lead{
+  margin-bottom:22px;
+}
+
+.faq-grid{
+  gap:58px;
+}
+
+.faq-list details p{
+  font-size:13px;
+}
+
+@media(max-width:760px){
+  section:not(.hero){
+    padding:58px 0;
+  }
+
+  .visual-section{
+    gap:22px;
+  }
+
+  .visual-heading h2,
+  .difference-section .visual-heading h2{
+    font-size:29px;
+  }
+
+  .visual-heading>p:not(.kicker){
+    margin-top:10px;
+    font-size:13px;
+  }
+
+  .visual-picture-wide,
+  .visual-picture-compare{
+    aspect-ratio:750/920;
+  }
+
+  .visual-picture{
+    border-radius:4px;
+    box-shadow:0 8px 22px rgba(21,25,29,.09);
+  }
+
+  .method-section .visual-heading h2{
+    padding-left:14px;
+    border-left-width:6px;
+    font-size:29px;
+  }
+
+  .formula-cta.visual-cta{
+    padding:21px 18px;
+    align-items:stretch;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .formula-cta.visual-cta strong{
+    font-size:19px;
+  }
+
+  .visual-bottom-cta .btn{
+    width:100%;
+    min-width:0;
+  }
+
+  .profile-copy h2{
+    font-size:29px;
+  }
+
+  .faq-grid{
+    gap:24px;
+  }
+}
